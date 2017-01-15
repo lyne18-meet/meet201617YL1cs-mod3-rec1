@@ -17,7 +17,14 @@ def draw_tree( this_branch, branch_num ):
     :param branch_num: the number corresponding to how deep in the tree this branch exists
     '''
     #Complete this method
+    turtle.pendown()
+    turtle.goto(0,-256)
 
+    def split(self):
+        rel_branch_size=0.5
+    draw_tree(this_branch, branch_num)
 draw_tree(branch1,1)
+branch1.split()
+
 
 turtle.mainloop()
