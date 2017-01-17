@@ -24,10 +24,11 @@ def draw_tree( this_branch, branch_num ):
     turtle.goto(this_branch.start)
     turtle.pendown()
     turtle.goto(this_branch.stop)
-
+    print('STOP!!!!!')
     branch_list=this_branch.split()
-    draw_tree(branch_list[0],1)
-    draw_tree(branch_list[1],1)
+    if branch_num<max_depth:
+        draw_tree(branch_list[0],branch_num+1)
+        draw_tree(branch_list[1],branch_num+1)
 '''
         rel_branch_size=0.5
     draw_tree(this_branch, branch_num)
